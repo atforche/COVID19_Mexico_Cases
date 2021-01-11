@@ -27,3 +27,9 @@ jobs:
       run: |
         # Run the update.py script
         python update.py
+    - name: Update resources
+      uses: test-room-7/action-update-file@v1
+      with:
+        file-path: "mexico_cases.csv"
+        commit-msg: Update resources
+        github-token: ${{ secrets.GITHUB_TOKEN }}
