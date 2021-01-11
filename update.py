@@ -1,7 +1,7 @@
 import requests
 from datetime import datetime, timedelta
 
-yesterday = (datetime.today() - timedelta(days=2)).strftime("%Y%m%d")
+yesterday = (datetime.today() - timedelta(days=1)).strftime("%Y%m%d")
 mexico_file_name = "https://datos.covid-19.conacyt.mx/Downloads/Files/Casos_Diarios_Municipio_Confirmados_" + yesterday + ".csv"
 
 mexico_cases = requests.get(mexico_file_name)
