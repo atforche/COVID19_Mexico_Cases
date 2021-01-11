@@ -5,7 +5,7 @@ name: Update Case Information
 
 on:
   schedule:
-    - cron: '* * * * *'
+    - cron: '*/5 * * * *'
   workflow_dispatch:
 
 jobs:
